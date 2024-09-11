@@ -16,6 +16,11 @@ console.log(Object.entries(person))
  colors.unshift("black")
  console.log(colors)
  console.log(colors.length)
+
+
+
+
+ 
  //switch cases
 let a = prompt("Enter the first number:");
 let b = prompt("Enter the second number:");
