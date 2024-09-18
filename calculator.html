@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       let a = prompt("Enter the first number:");
+       let b = prompt("Enter the second number:");
+       let input = prompt("Enter the operation (+ or - or * or / or %):");
+    a=parseInt(a);
+    b=parseInt(b);
+   //alert(typeof a)
+    switch(input){
+    case "+":
+        alert(`The solution for ${a}${input}${b} is : ${a+b}`);
+        break
+    case "-":
+        alert(`The solution for ${a}${input}${b} is : ${a-b}`);
+        break
+    case "*":
+        alert(`The solution for ${a}${input}${b} is : ${a*b}`);
+        break
+    case "/":
+        alert(`The solution for ${a}${input}${b} is : ${a/b}`);
+        break
+    case "%":
+        alert(`The solution for ${a}${input}${b} is : ${a%b}`);
+        break
+    default:
+        alert("Error in displaying the answer.Thank you!")
+}
+    </script>
+</body>
+</html>
