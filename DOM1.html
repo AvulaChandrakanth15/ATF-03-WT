@@ -1,0 +1,83 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head>     
+    <meta charset="UTF-8">     
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">     
+    <title>Styled Document</title>     
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        h2 {
+            color:black;
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1em;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #06440a;
+        }
+        .addclass{
+            background-color: gray;
+        }
+        .dark{
+            background-color:aqua;
+            color: red;
+
+        }
+    </style>
+</head> 
+<body> 
+    <div id="root">   
+    <h2 id="heading">Chandrakanth</h2> 
+    <center><button onclick="changeMode()">Change Mode</button></center>    
+    <button onclick="clicke()"id="button1">Submit</button> 
+    </div>     
+    <script>         
+        function clicke() {             
+            let element = document.getElementById("heading");
+            //element.innerText = "Avula Chandrakanth";             
+            //element.textContent = "Avula Chandrakanth123";             
+            element.innerHTML = "<em>Chandrakanth</em>";
+        } 
+        let element2=document.createElement('h1')
+        element2.innerHTML="<b>Jai Srimannarayana!</b>"
+        //let parent=document.getElementsByTagName('body')[0]
+        //parent.appendChild(element2) 
+        //parent.prepend(element2)
+        //let image=document.createElement('img')
+        //image.setAttribute("src","file:///C:/Users/LENOVO/Downloads/FB_IMG_1726590353917.jpg")
+        //let reference=document.getElementById("button1")
+        //let parent=document.getElementById("root")
+        //parent.insertBefore(image,reference)
+        let div=document.getElementById("root")
+        //div.classList.add("addclass")
+        //div.classList.remove("addclass")
+        //div.classList.toggle("active")
+        function changeMode(){
+            div.classList.toggle("dark")
+        }
+        console.dir(div)
+    </script> 
+</body> 
+</html>
