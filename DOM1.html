@@ -51,7 +51,7 @@
     <div id="root">   
     <h2 id="heading">Chandrakanth</h2> 
     <center><button onclick="changeMode()">Change Mode</button></center>    
-    <button onclick="clicke()"id="button1">Submit</button> 
+    <button id="btn2">Submit</button> 
     </div>     
     <script>         
         function clicke() {             
@@ -75,9 +75,14 @@
         //div.classList.remove("addclass")
         //div.classList.toggle("active")
         function changeMode(){
-            div.classList.toggle("dark")
+           div.classList.toggle("dark")
         }
         console.dir(div)
+        let btn=document.getElementById("btn2")
+        btn.onclick=function(){
+            div.classList.toggle("dark")
+        }
+        
     </script> 
 </body> 
 </html>

@@ -4,9 +4,75 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        h2 {
+            color:black;
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1em;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #06440a;
+        }
+        .addclass{
+            background-color: gray;
+        }
+        
+    </style>
 </head>
 <body>
-    
-    <script></script>
+    <div id="root">   
+        <h2 id="heading">Chandrakanth</h2> 
+        <input type="text" id="inp" placeholder="Name"> 
+        <form id="form"><input type="text" id="inp">
+        <button type="submit">Submit</button></form> 
+        <button id="btn2">Submit</button> 
+        </div>   
+    <script>
+        let but=document.getElementById("btn2")
+        but.addEventListener("mouseover",function(){
+            document.body.style.backgroundColor="violet"
+        })
+        but.addEventListener("mouseout",function(e){
+            document.body.style.backgroundColor="grey"
+            console.log(e)
+        })
+        let input=document.getElementById("inp")
+        input.addEventListener("keydown",function(){
+            document.body.style.backgroundColor="yellow"
+        })
+        input.addEventListener("keyup",function(e){
+            document.body.style.backgroundColor="green"
+            console.log(e)
+        })
+        let form1=document.getElementById("form")
+        form.addEventListener("submit",function(){
+            document.body.style.backgroundColor="black"
+        })
+
+    </script>
 </body>
 </html>
